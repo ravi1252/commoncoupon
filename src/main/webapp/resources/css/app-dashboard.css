@@ -1,0 +1,761 @@
+/*************************************
+ Dashboard related classes reside here 
+ **************************************/
+ 
+ body {
+  background-image: url("../img/white_bg_with_pattern.png");
+  background-repeat: repeat;
+  background-size: 1277px 372px;
+  background-color: #fff;
+}
+ 
+ .navbar-inverse .navbar-nav > li > a {
+  color: #bdbcbd;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #bdbcbd;
+}
+
+.navbar-brand {
+  float: left;
+  font-family: "bello-pro",cursive !important;
+  font-size: 1.5em;
+  height: 50px;
+  padding: 15px;
+}
+
+.navbar-nav{
+  font-family: "Roboto Condensed",sans-serif !important;
+}
+
+
+/** seperator global classes  starts*/
+.separator {
+    padding-bottom: 35px;
+    position: relative;
+    text-align: center;
+}
+.separator span {
+    background: #cd1632 none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-family: "bello-pro",sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0 auto;
+    min-width: 85px;
+    padding: 7px 11px 4px 9px;
+    position: relative;
+}
+.separator span::after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #cd1632 transparent transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 10px;
+    bottom: -20px;
+    content: "";
+    display: block;
+    height: 0;
+    left: 50%;
+    margin-left: -11px;
+    position: absolute;
+    width: 0;
+    z-index: 1;
+}
+.separator::before, .separator::after {
+    content: "";
+    display: block;
+    opacity: 0.3;
+    position: absolute;
+}
+.separator::before {
+    border-top: 1px solid #cd1632;
+    left: 0;
+    right: 0;
+    top: 15px;
+}
+/** seperator global ends starts*/
+
+.dashboard .separator{
+	width: 50%;
+}
+
+.dashboard.separator span::after{
+	margin-left: -18px;
+}
+
+.serp_box{
+	border: 1px solid rgb(177, 172, 160);
+	padding: 18px 18px 24px; 
+	text-align: center; 
+	font-size: 29px; 
+	font-family: 'Fjalla One', sans-serif;
+	cursor:pointer;
+}
+
+.dashboard_second_panel{
+	margin-top: 37px;
+}
+
+.update_box{
+	border-width: 1px 1px 1px medium;
+	border-style: solid solid solid none; 
+	-moz-border-top-colors: none; 
+	-moz-border-right-colors: none; 
+	-moz-border-bottom-colors: none; 
+	-moz-border-left-colors: none; 
+	border-image: none; 
+	border-color: rgb(228, 225, 218); 
+	margin-top: 8%;
+}
+
+.update_box blockquote{
+	border-color: #231F20;
+	margin-bottom: 0px;
+	font-size: 18px;
+}
+
+.add_block{
+	min-width: 18%;
+	margin-top: 14px;
+	margin-left: 4%; 
+	border-color: #E0D9CB;
+}
+
+
+/**	Desktop header related classes starts here */
+.header-bg{
+	background-image: url("../img/plain-header.png");
+    height: 166px;
+    background-repeat: no-repeat;
+	padding-top: 12px;
+}
+
+.header-angle-div {
+	background-image: url("../img/triangle_div_with_arrow.png");
+	background-repeat: no-repeat;
+	height: 128px;
+	background-size: 100%;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+	background-color: transparent !important;
+	border-color: transparent !important;
+}
+.user_pic{
+	padding-top: 8px !important;
+	padding-bottom: 0px !important;
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+
+/**	Desktop header related classes ends here */
+
+.how_it_works_panel {
+	background: #12A2AF;
+	padding: 12px 10px;
+	color: #fff;
+	font-family: "Roboto Condensed",sans-serif !important;
+	min-height: 450px;
+}
+
+.how_it_works {
+	//font-family: "bello-pro",sans-serif;
+	font-family: 'Frijole', cursive;
+    font-size: 24px;
+    padding: 15px;
+    text-align: center;
+}
+
+.major_footer_panel {
+	padding: 40px 10px 17px 10px;
+	font-size: 16px;
+	font-family: "Roboto Condensed",sans-serif !important;
+	min-height: 150px;
+	color: #969393;
+	background: #201F1F none repeat scroll 0px 0px;
+}
+
+.major_footer_panel_menu_list_ul  > li{
+	padding-right:5px;
+	width: 90px;
+}
+
+.major_footer_panel_social_icon_list_ul {
+	padding-top: 15px;
+}
+
+.major_footer_panel_social_icon_list_ul > li {
+	padding-right:5px;
+}
+
+.major_footer_panel_social_icon_list_ul > li.icons {
+	font-size: 27px;
+}
+
+.mini_footer_panel  {
+	background: #040404;
+	padding: 12px 10px;
+	color: #C49E5C;
+	font-family: "Roboto Condensed",sans-serif !important;
+}
+
+.buy_ecard_panel{
+	//background: red none repeat scroll 0% 0%; 
+	min-height: 200px; 
+	margin-top: 4%; 
+	color: rgb(255, 255, 255);
+}
+
+.buy_ecard_panel_blinking_text{
+    font-family: 'Frijole', cursive !important;
+	font-size: 30px;
+    font-weight: 500;
+	color: #D5D5D5;
+	line-height: 30px;
+}
+
+
+/** common css for all leafs */
+.fa-arrow-circle-o-right, .fa-arrow-circle-o-left{
+	cursor: pointer;
+}
+
+.buy_ecard_panel_form{
+    font-size: 20px;
+    font-weight: 500;
+	//background: rgba(242, 94, 94, 0.3) none repeat scroll 0% 0%;
+	background : rgba(254, 52, 52, 0.3) none repeat scroll 0% 0%;
+	margin-top: 5%;
+	min-height: 235px;
+	border-radius: 2px;
+	//font-family: 'Frijole', cursive;
+	font-family: 'GoodDog', cursive;
+	padding: 4px 20px;
+}
+
+.buy_ecard_panel_form .form_number_display {
+	text-align:right; 
+	font-size: 23px;
+}
+
+.coupon_required_field {
+	font-size: 18px; 
+	text-align: right; 
+	letter-spacing: 3px; 
+	margin-top: 1px;
+}
+
+/** Leaf 1 css */
+.buy_ecard_panel_form .form_leaf_1 {
+	font-size: 40px;
+}
+
+.buy_ecard_panel_form .form_leaf_1 .next_arrow {
+	text-align: right; 
+	color: rgb(255, 255, 255); 
+	font-size: 43px; 
+	line-height: 1px;
+	//color: rgba(213, 213, 213, 0.68);
+	color: #fff;
+}
+
+/** Leaf 2 css */
+.buy_ecard_panel_form .form_leaf_2 {
+	font-size: 40px;
+}
+
+.buy_ecard_panel_form .form_leaf_2 .give_ur_details{
+	line-height: 1px;
+}
+
+.buy_ecard_panel_form .form_leaf_2 .next_arrow {
+	text-align: right; 
+	padding-top: 56px;
+	line-height: 1px;
+}
+
+/** Leaf 3 css */
+.buy_ecard_panel_form .form_leaf_3 {
+	font-size: 40px;
+}
+
+.buy_ecard_panel_form .form_leaf_3 .give_ur_details{
+	line-height: 1px;
+}
+
+.buy_ecard_panel_form .form_leaf_3 .next_arrow {
+	text-align: right; 
+	line-height: 1px;
+}
+
+
+.redeem_coupon_panel{
+	//background: red none repeat scroll 0% 0%; 
+	min-height: 200px; 
+	margin-top: 4%; 
+	color: rgb(255, 255, 255);
+}
+
+.redeem_coupon_panel_form{
+	font-size: 20px;
+	font-weight: 500;
+	//background: rgba(242, 94, 94, 0.3) none repeat scroll 0% 0%;
+	background : rgba(254, 52, 52, 0.3) none repeat scroll 0% 0%;
+	margin-top: 2%;
+	min-height: 235px;
+	border-radius: 2px;
+	//font-family: 'Frijole', cursive;
+	font-family: 'GoodDog', cursive;
+	padding: 4px 20px;
+}
+
+.redeem_coupon_panel_blinking_text{
+    font-family: 'Frijole', cursive !important;
+	font-size: 30px;
+    font-weight: 500;
+	color: #D5D5D5;
+	line-height: 30px;
+}
+
+.redeem_coupon_panel_form .form_leaf_1 {
+	font-size: 40px;
+}
+
+.redeem_coupon_panel_form .form_leaf_1 .next_arrow {
+	text-align: right; 
+	color: rgb(255, 255, 255); 
+	font-size: 43px; 
+	line-height: 1px;
+	//color: rgba(213, 213, 213, 0.68);
+	color: #fff;
+	padding-top: 6%;
+}
+
+.redeem_coupon_panel_form .form_leaf_1 .enter_card_details {
+	color: #D5D5D5;
+}
+
+.redeem_btn {
+	color: #D5D5D5 !important;
+}
+
+
+/** Custom text box */
+.cus_text_box {
+	font-size: 25px;
+	margin-bottom: 0px;
+}
+
+.cus_text_box .input-group-addon{
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+	padding: 6px 0;
+}
+
+.cus_text_box .form-control{
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+	box-shadow: none;
+	height: 43px;
+}
+
+/*
+*  Styles for popups 
+*/
+.login_modal_footer{margin-top:5px;}
+.login_modal_header .modal-title {text-align: center;}
+.form-group{position: relative;}
+.form-group .login-field-icon {
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    transition: all 0.25s ease 0s;
+    padding-top: 2%;
+}
+.login-modal{
+    width:100%;
+    padding-bottom:20px;
+}
+.login_modal_header, .login_modal_footer {
+	background: #cd1632 !important;
+	color:#fff;
+}
+.modal-register-btn{
+	padding-top: 15px;
+}
+.login-modal input{
+	height:40px; 
+	box-shadow: none; 
+	border:1px solid #ddd;
+}
+.modal-body-right{
+	float:right; 
+	width:47%;
+}
+.modal-social-icons{
+	padding:0 10%;
+}
+.facebook, .twitter, .google, .linkedin {
+	width:100%;
+	height:40px; 
+	padding-top:2%; 
+	margin-top:2%;
+}
+.modal-icons{
+	margin-left: -10px; 
+	margin-right: 20px;
+}
+.facebook, .facebook:hover{
+	background-color: #3b5999; 
+	border:2px solid #3b5999;
+	color:#fff;
+}
+#social-icons-conatainer{
+	position: relative;
+}
+#center-line{
+	position: absolute;  
+	right: 265.7px;
+	top: 80px;
+	background:#ddd;  
+	border: 4px solid #DDDDDD;
+	border-radius: 20px;
+}
+.modal-login-btn{
+	width:100%;
+	height:40px; 
+	margin-bottom:10px;
+}
+#modal-launcher{
+	margin: 30% 0 0 30%; 
+}
+
+.login-content{
+	background: none repeat scroll 0% 0% rgba(162, 28, 28, 0.87);
+}
+
+@media (min-width:768px){
+	.modal-dialog {
+	    width: 350px;
+	    margin: 30px auto;
+	}
+}
+
+
+/**
+* GET VOUCHER PAGE css
+*/
+.get_voucher_panel {
+	padding-top: 4.6%;
+	text_align: center;
+}
+
+.had_our_ecard {
+	padding-top: 2%;
+	color: #CD1632;
+	font-size: 24px;
+	font-family: 'Fjalla One', sans-serif;
+	padding-bottom: 2%;
+	letter-spacing: 5px;
+}
+
+@media (min-width:1024px){
+	.col-lg-2_8 {
+		width: 24.5%;
+		float: left;
+		// position: relative;
+		min-height: 1px;
+	}
+}
+
+.coupons_wrapper_main {
+	padding-top: 13px; 
+	padding-bottom: 13px;
+}
+.coupon_wrapper_single {
+	padding-bottom: 1px;
+	border: 1px solid rgb(204, 204, 204); 
+}
+.coupon_box {
+	border: 1px solid rgb(204, 204, 204); 
+	height: 190px; 
+	overflow: hidden;
+}
+.coupon_padding{
+	padding-right: 2px;
+	padding-left: 2px;
+}
+
+
+
+.hovereffect {
+  width: 100%;
+  //height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+width:100%;
+height:100%;
+position:absolute;
+overflow:hidden;
+top:0;
+left:0;
+opacity:0;
+background-color:rgba(0,0,0,0.5);
+-webkit-transition:all .4s ease-in-out;
+transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+display:block;
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+}
+
+
+
+.hovereffect a.info {
+text-decoration:none;
+display:inline-block;
+//text-transform:uppercase;
+color:#d5c9c9;
+//border:1px solid #c5b3b3;
+background-color:#B91400;
+opacity:0;
+filter:alpha(opacity=0);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+margin:5px 0 0;
+padding:1px 11px;
+//border-radius: 6px;
+}
+
+.hovereffect a.info:hover {
+box-shadow:0 0 5px #B91400;
+}
+
+.hovereffect:hover img {
+-ms-transform:scale(1.2);
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+.hovereffect:hover h2,.hovereffect:hover a.info {
+opacity:1;
+filter:alpha(opacity=100);
+-ms-transform:translatey(0);
+-webkit-transform:translatey(0);
+transform:translatey(0);
+}
+
+.hovereffect:hover a.info {
+-webkit-transition-delay:.2s;
+transition-delay:.2s;
+}
+
+.ribbon {
+   width: 100%;
+   font-size: 18px!important;
+   background: #cd1631;
+   background: -webkit-gradient(linear, left top, left bottom, from(#cd1631), to(#ab2c2c));
+   background: -webkit-linear-gradient(top, #cd1631, #ab2c2c);
+   background: -moz-linear-gradient(top, #cd1631, #ab2c2c);
+   background: -ms-linear-gradient(top, #cd1631, #ab2c2c);
+   background: -o-linear-gradient(top, #cd1631, #ab2c2c);
+   background-image: -ms-linear-gradient(top, #cd1631 0%, #ab2c2c 100%);
+   -webkit-box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
+   -moz-box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
+   box-shadow: rgba(000,000,000,0.3) 0 1px 1px;
+   font-family: 'Helvetica Neue',Helvetica, sans-serif;
+   text-transform: lowercase;
+}
+.ribbon h1 {
+	font-size: 20px !important;
+	text-shadow: #d65c5c 0 1px 0;
+	margin: 0px;
+	padding: 5px;
+	color: #fff;
+	font-family: 'Fjalla One', sans-serif;
+	letter-spacing: 3px;
+}
+
+.ribbon-stitches-top {
+   margin-top:2px;
+   border-top: 1px dashed rgba(0, 0, 0, 0.2);
+   -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+   box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+   }
+.ribbon-stitches-bottom {
+   margin-bottom:2px;
+   border-top: 1px dashed rgba(0, 0, 0, 0.2);
+   -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+   -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+   box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.3);
+   }
+.overlay span:hover {
+    border-top: 1px solid #fff;
+    border-style: dashed;
+    border-color: red;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    padding-top: 8px;
+}
+.voucher_pickup{
+	width: 70%; 
+	margin: 29px auto; 
+	padding-top: 9px; 
+	-moz-border-top-colors: none; 
+	-moz-border-right-colors: none; 
+	-moz-border-bottom-colors: none; 
+	-moz-border-left-colors: none; 
+	border-image: none; 
+	border-width: 2px medium medium;
+	border-style: dashed none none; 
+	border-color: red -moz-use-text-color -moz-use-text-color;
+}
+.voucher_selectbox{
+	width: 35%;
+	height: 28px;
+	margin-right: 30px;
+}
+.voucher_pick_btn{
+	text-decoration: none;
+	color: #fff;
+	filter: alpha(opacity=0);
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	padding: 6px 20px;
+	background: rgb(205, 22, 50) none repeat scroll 0% 0% !important;
+	width: 40% !important;
+	box-shadow: 0px 0px 5px rgb(205, 22, 50) !important;
+	border: none !important;
+	text-transform:uppercase;
+	font-family: 'Helvetica Neue',Helvetica, sans-serif;
+	box-shadow: 0px 0px 5px rgb(205, 22, 50) !important;
+	border: none !important;
+	text-transform: uppercase;
+	font-family: 'Helvetica Neue',Helvetica, sans-serif;
+	letter-spacing: 4px;
+	font-size: 12px;
+	font-weight: bold;
+}
+.voucher_pick_btn:hover{
+	color:#fff;
+	text-decoration:none;
+	cursor: pointer;
+}
+.voucher_selected_pic {
+	background-image: url('http://localhost/resources/img/flipkart.jpg');
+	/* border-radius: 50%; */
+	overflow: hidden;
+	height: 100%;
+	background-size: cover !important;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.voucher_account_summary{
+	text-align: left; 
+	padding: 7px 7px 7px 25px; 
+	font-size: 23px; 
+	color: rgb(205, 22, 50); 
+	font-family: belligerent; 
+	border-bottom: 1px solid rgb(204, 204, 204); 
+	font-weight: bold;
+}
+.voucher_balance{
+	text-align: left; 
+	padding: 7px 7px 7px 25px; 
+	font-size: 19px; 
+	color: rgb(230, 57, 59); 
+	font-family: belligerent; 
+	border-bottom: 1px solid rgb(204, 204, 204); 
+}
+.voucher_balance_amount{
+	float: right; 
+	margin-right: 16px; 
+	color: gray; 
+	font-size: 28px; 
+	font-family: 'GoodDog', cursive;
+	line-height: 23px;
+}
+.selected_vouchers{
+	text-align: left; 
+	padding: 7px 7px 7px 25px; 
+	font-size: 19px; 
+	color: rgb(230, 57, 59); 
+	font-family: belligerent; 
+	border-bottom: 1px solid rgb(204, 204, 204); 
+}
+.selected_vouchers_amount{
+	float: right; 
+	margin-right: 16px; 
+	color: gray; 
+	font-size: 28px; 
+	font-family: 'GoodDog', cursive;
+	line-height: 23px;
+}
+.vouchers_buy_btn{
+	text-align: left; 
+	padding: 7px 7px 7px 25px; 
+	font-size: 19px; 
+	color: rgb(230, 57, 59); 
+	font-family: belligerent;
+}
+.vouchers_buy_btn_style{
+	font-family: 'GoodDog', cursive;
+	font-size: 25px; 
+	line-height: 26px; 
+	float: right; 
+	margin-right: 9px; 
+	//padding-right: 10px; 
+	padding-left: 11px;
+}
+.voucher_unpick{
+	font-size: 20px;
+    margin-top: 5px;
+    color: rgba(205, 22, 49, 0.82);
+}
+
+#redeemBtn:hover {
+	background-color: yellow;
+	color: white;
+	background: #CD1632;
+	padding: 3px 5px 3px 5px;
+	border-radius: 7px;
+}
+/** GET VOUCHER page css ends	*/
+
+.reset_password {
+    color: rgb(255, 255, 255);
+	margin-bottom: 6px;
+}
